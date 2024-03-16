@@ -105,20 +105,21 @@ c1,c2,c3= st.columns([2.5,4,2.5])
 
 with st.container():
     tab1,tab2,tab3,tab4,tab5,tab6,tab7,tab8,tab9,tab10,tab11,tab12,tab13,tab14,tab15,tab16,tab17,tab18,tab19,tab20,tab21,tab22,tab23,tab24,tab25,tab26,tab27,tab28,tab29,tab30,tab31,tab32,tab33,tab34,tab35,tab36,tab37,tab38,tab39,tab40,tab41,tab42,tab43,tab44,tab45,tab46,tab47,tab48,tab49,tab50,tab51,tab52,tab53,tab54= st.tabs(["         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","INSTANT RESUME REVIEW","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ", "RESUME SAMPLES","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ", "RESUME TARGETTING","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ","         ", "LINKEDIN OPTIMIZATION"])
-    space(5)
-    c1,c2,c3 = st.columns([5,0.5,5])
-    with c1:
-        st.video("IRR.mp4")
-    with c3:
-        space(6)
-        st.markdown("<h3 style = 'text-align: center; color: white ;'><b>Get expert feedback on your resume, instantly.</b></h3>", unsafe_allow_html = True)
-        st.markdown("<h5 style = 'text-align: center; color: white ;'><b>Score My Resume scores your resume on key criteria recruiters and hiring managers look for. Upload your resume and in just 30 seconds, you'll get actionable steps to revamp your resume and land more interviews.</b></h5>", unsafe_allow_html = True)
-        space(1)
-        c1,c2,c3 = st.columns([3,3,2])
-        with c2:
-            st.markdown(button_style, unsafe_allow_html=True)
-            if st.button("Upload resume >>"):
-                st.write("Button clicked!")
+    with tab18:
+        space(5)
+        c1,c2,c3 = st.columns([5,0.5,5])
+        with c1:
+            st.video("IRR.mp4")
+        with c3:
+            space(6)
+            st.markdown("<h3 style = 'text-align: center; color: white ;'><b>Get expert feedback on your resume, instantly.</b></h3>", unsafe_allow_html = True)
+            st.markdown("<h5 style = 'text-align: center; color: white ;'><b>Score My Resume scores your resume on key criteria recruiters and hiring managers look for. Upload your resume and in just 30 seconds, you'll get actionable steps to revamp your resume and land more interviews.</b></h5>", unsafe_allow_html = True)
+            space(1)
+            c1,c2,c3 = st.columns([3,3,2])
+            with c2:
+                st.markdown(button_style, unsafe_allow_html=True)
+                if st.button("Upload resume >>"):
+                    st.write("Button clicked!")
 
     with tab30:
         space(5)
