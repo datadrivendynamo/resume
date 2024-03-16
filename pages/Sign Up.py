@@ -41,8 +41,8 @@ def create_account(first_name, last_name, email, password):
 def signup():
     tab1, tab2, tab3, tab4, tab5, tab6, tab7= st.tabs(["Signup","  ","  "," | ","  ","  ","Login"])
     with tab1:
-        c1,c2,c3 = st.columns([2,3,2])
-        with c2:
+        c1,c2,c3 = st.columns([3,2,2])
+        with c1:
             st.title("Sign Up")
             def check_email(email):
                 conn = connect_to_snowflake()
@@ -80,8 +80,8 @@ def signup():
                         st.switch_page("pages/Check your resume score.py")   
 
     with tab7:
-        c1,c2,c3 = st.columns([2,3,2])
-        with c2:
+        c1,c2,c3 = st.columns([3,2,2])
+        with c1:
             def check_email(email):
                 conn=connect_to_snowflake()
                 cursor = conn.cursor()
