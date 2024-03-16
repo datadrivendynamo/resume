@@ -1,0 +1,19 @@
+{
+  "name": "docx",
+  "version": "0.2.4",
+  "description": "Streamlit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datadrivendynamo/resume.git"
+  },
+  "author": "Himanshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datadrivendynamo/resume/issues"
+  },
+  "homepage": "https://github.com/datadrivendynamo/resume#readme"
+}
