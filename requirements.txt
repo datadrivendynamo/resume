@@ -1,2 +1,7 @@
 streamlit
 streamlit-lottie
+streamlit-extras
+jsonschema
+snowflake.connector
+time
+docx
