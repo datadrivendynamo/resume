@@ -67,8 +67,9 @@ def signup():
             password = st.text_input("Create new password", type="password")
             confirm_password = st.text_input("Confirm new password", type="password")
 
-            if first_name and last_name and email and password and confirm_password:
-                if st.button("Sign Up"):
+            
+            if st.button("Sign Up"):
+                if first_name and last_name and email and password and confirm_password:
                     if password != confirm_password:
                         st.error("Passwords do not match!")
                     else:
