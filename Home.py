@@ -170,8 +170,9 @@ with st.container():
                 if st.button("Optimize LinkedIn profile >>"):
                     st.write("Button clicked!")
 
-st.markdown('---')
 space(10)
 c1,c2 = st.columns([4.4,2])
 with c2:
-    st.text("Credits: Images and videos sourced from https://resumeworded.com")
+    st.text("Credits: Text, Images and videos sourced from https://resumeworded.com")
+    st.text("For project purpose only")
+   
