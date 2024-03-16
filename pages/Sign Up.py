@@ -66,18 +66,19 @@ def signup():
             email = st.text_input("Email")
             password = st.text_input("Create new password", type="password")
             confirm_password = st.text_input("Confirm new password", type="password")
-    
-            if st.button("Sign Up"):
-                if password != confirm_password:
-                    st.error("Passwords do not match!")
-                else:
-                    email_exists = check_email(email)
-                    if email_exists:
-                        st.error("Email already exists! Please use a different email.")
+
+            if first_name and last_name and email and password and confirm_password:
+                if st.button("Sign Up"):
+                    if password != confirm_password:
+                        st.error("Passwords do not match!")
                     else:
-                        create_account(first_name, last_name, email, password)
-                        time.sleep(3)
-                        st.switch_page("pages/Check your resume score.py")   
+                        email_exists = check_email(email)
+                        if email_exists:
+                            st.error("Email already exists! Please use a different email.")
+                        else:
+                            create_account(first_name, last_name, email, password)
+                            time.sleep(3)
+                            st.switch_page("pages/Check your resume score.py")   
 
     with tab7:
         c1,c2 = st.columns([3,4])
