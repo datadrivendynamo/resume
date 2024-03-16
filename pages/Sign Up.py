@@ -3,7 +3,7 @@ import snowflake.connector
 from snowflake.connector import Error
 import time
 
-st.set_page_config(page_title='Login/Signup', initial_sidebar_state="collapsed", layout="wide", menu_items="None")
+st.set_page_config(page_title='Login/Signup', initial_sidebar_state="collapsed", layout="wide", menu_items=None)
 # Connect to Snowflake
 def connect_to_snowflake():
     try:
