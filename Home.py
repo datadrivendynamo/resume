@@ -44,7 +44,7 @@ with c3:
 with c4:
     c1,c2 = st.columns([0.6,3])
     with c2:
-        lottie_home = load_lottiefile("/Users/himanshu/Streamlit/Resume/lottie_files/a.json")
+        lottie_home = load_lottiefile("lottie_files/a.json")
         st_lottie(lottie_home,
                 speed=0.7,
                 reverse=False,
@@ -81,7 +81,7 @@ with c1:
             st.markdown(button_style, unsafe_allow_html=True)
             if st.button("See preview >>"):
                 st.write("Button clicked!")
-    lottie_home1 = load_lottiefile("/Users/himanshu/Streamlit/Resume/lottie_files/b.json")
+    lottie_home1 = load_lottiefile("lottie_files/b.json")
     st_lottie(lottie_home1,
               speed=0.7,
               reverse=False,
@@ -109,7 +109,7 @@ with st.container():
         space(5)
         c1,c2,c3 = st.columns([5,0.5,5])
         with c1:
-            st.video("/Users/himanshu/Streamlit/Resume/IRR.mp4")
+            st.video("IRR.mp4")
         with c3:
             space(6)
             st.markdown("<h3 style = 'text-align: center; color: white ;'><b>Get expert feedback on your resume, instantly.</b></h3>", unsafe_allow_html = True)
@@ -125,7 +125,7 @@ with st.container():
         space(5)
         c1,c2,c3 = st.columns([5,0.5,5])
         with c1:
-            st.video("/Users/himanshu/Streamlit/Resume/RS.mp4")
+            st.video("RS.mp4")
         with c3:
             space(6)
             st.markdown("<h3 style = 'text-align: center; color: white ;'><b>Examples from top resumes</b></h3>", unsafe_allow_html = True)
@@ -141,7 +141,7 @@ with st.container():
         space(5)
         c1,c2,c3 = st.columns([5,0.5,5])
         with c1:
-            st.image("/Users/himanshu/Streamlit/Resume/RT.png")
+            st.image("RT.png")
         with c3:
             space(6)
             st.markdown("<h3 style = 'text-align: center; color: white ;'><b>Target your resume to a job, instantly.</b></h3>", unsafe_allow_html = True)
@@ -157,7 +157,7 @@ with st.container():
         space(5)
         c1,c2,c3 = st.columns([5,0.5,5])
         with c1:
-            st.image("/Users/himanshu/Streamlit/Resume/LO.png")
+            st.image("LO.png")
         with c3:
             space(6)
             st.markdown("<h3 style = 'text-align: center; color: white ;'><b>Get found by the right people on LinkedIn</b></h3>", unsafe_allow_html = True)
