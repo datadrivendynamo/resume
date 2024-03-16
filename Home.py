@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_lottie import st_lottie
 import json
+from streamlit_extras.switch_page_button import switch_page
 
 st.set_page_config(page_title='Resume Scorer', initial_sidebar_state="collapsed", layout="wide")
 
@@ -75,7 +76,7 @@ with c1:
             """
             st.markdown(button_style, unsafe_allow_html=True)
             if st.button("Get Started for free >>"):
-                st.write("Button clicked!")
+                switch_page("Sign Up")
     with a2:
         with st.container():
             st.markdown(button_style, unsafe_allow_html=True)
@@ -169,9 +170,8 @@ with st.container():
                 if st.button("Optimize LinkedIn profile >>"):
                     st.write("Button clicked!")
 
-
+st.markdown('---')
 space(10)
 c1,c2 = st.columns([4.4,2])
 with c2:
-    st.text("Credits: Text, Images and videos sourced from https://resumeworded.com")
-    st.text("For project purpose only")
+    st.text("Credits: Images and videos sourced from https://resumeworded.com")
