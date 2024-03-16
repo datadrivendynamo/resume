@@ -169,7 +169,7 @@ with st.container():
                 if st.button("Optimize LinkedIn profile >>"):
                     st.write("Button clicked!")
 
-st.markdown('---')
+
 space(10)
 c1,c2 = st.columns([4.4,2])
 with c2:
