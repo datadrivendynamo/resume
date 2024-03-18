@@ -35,8 +35,7 @@ def load_lottiefile(filepath: str):
 
 # First column
 with c1:
-    st.image("SL.png",width=200)
-    st.markdown("<h5 style='text-align: left; color: #ffce03 ; '>Sunlight Technologies</h5>", unsafe_allow_html=True)
+    st.image("logo.png",width=270)
 
 with c3:
     space(5)
