@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_lottie import st_lottie
 import json
+from streamlit_extras.switch_page_button import switch_page
 
 st.set_page_config(page_title='Resume Scorer', initial_sidebar_state="collapsed", layout="wide")
 
@@ -77,7 +78,7 @@ with c1:
             """
             st.markdown(button_style, unsafe_allow_html=True)
             if st.button("Get Started for free >>"):
-                st.write("Button clicked!")
+                st.switch_page("pages/Sign_Up.py")
     with a2:
         with st.container():
             st.markdown(button_style, unsafe_allow_html=True)
