@@ -78,7 +78,7 @@ with c1:
             """
             st.markdown(button_style, unsafe_allow_html=True)
             if st.button("Get Started for free >>"):
-                st.switch_page("pages/Sign_Up.py")
+                st.switch_page("pages/Sign Up.py")
     with a2:
         with st.container():
             st.markdown(button_style, unsafe_allow_html=True)
