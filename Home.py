@@ -35,7 +35,7 @@ def load_lottiefile(filepath: str):
 
 with c1:
     space(6)
-    st.image("logo.png",width=270)
+    st.image("logo.png",width=290)
     
 
 with c3:
